@@ -1,0 +1,264 @@
+/* paleta-de-colores {
+    Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Gris oscuro: #666;
+    Gris claro: #ebebeb;
+    Verde: #39b54a;
+} */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #EAC926;
+}
+
+.container-logo {
+    width: 95vw;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-mercado-liebre,
+.busqueda {
+    width: 40%;
+    color: black;
+    font-size: 12px;
+}
+
+.p-cuotas {
+    width: 80%;
+    font-size: 12px;
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+    position: relative;
+    min-height: 125px;
+}
+
+.burger-menu {
+    width: 35px;
+    height: 30px;
+    background-color: #03264C;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main {
+    width: 100vw;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+nav {
+    display: none;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style-type: none;
+    margin: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin: 15px 5px;
+    text-align: center;
+}
+
+input {
+    width: 95%;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+input::placeholder {
+    font-size: 12px;
+}
+
+.icon {
+    width: 16px;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.fa-credit-card,
+.fa-gift,
+.fa-user-shield {
+    display: flex;
+    font-size: 2em;
+    color: #1259c3;
+}
+
+.texto {
+    font-size: 12px;
+    text-align: center;
+}
+
+form {
+    width: 75%;
+}
+
+
+.boton-ingresar button {
+    width: 95%;
+    font-size: 12px;
+    background-color: #1259c3;
+    color: white;
+    border: 2px solid #1259c3;
+    border-radius: 3px;
+    padding: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0022AA;
+}
+
+body footer p {
+    text-align: left;
+}
+
+@media (min-width:361px) {
+
+    .busqueda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-mercado-liebre,
+    .p-cuotas,
+    .busqueda {
+        width: 30%;
+        color: black;
+        font-size: 12px;
+    }
+
+    .container-logo {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    form {
+        width: 50%;
+        max-width: 40vw;
+    }
+
+    nav {
+        width: 90vw;
+        font-size: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width:769px) {
+    .h2-footer {
+        font-size: 16px;
+    }
+
+    .container-footer {
+        font-size: 16px;
+        margin: 10px;
+        line-height: 24px;
+        width: 33%;
+    }
+
+    .main-footer {
+        display: flex;
+        width: 95vw;
+    }
+
+    .fa-credit-card,
+    .fa-gift,
+    .fa-user-shield {
+        transition: all 0.4s ease-in-out;
+    }
+
+    .fa-credit-card:hover {
+        scale: 1.2;
+        color: #03264C;
+    }
+
+    .fa-gift:hover {
+        scale: 1.2;
+        color: #ff0000;
+    }
+
+    .fa-user-shield:hover {
+        scale: 1.2;
+        color: #39b54a;
+    }
+}
